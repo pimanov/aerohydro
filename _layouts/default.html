@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <title> {{ site.title }} | {{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/2014/new.css" />
+    <script src="/2014/scripts.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="header">
+      <table class="header">
+        <tr>
+          <td class="logo"><a href="{{site.baseurl}}" title="Домой"><img src="/2014/img/logo1.png" alt="Домой" hspace="10px"/></a></td>
+          <td class="text-logo">
+            <div class="one-text-logo">
+	      XVII школа-семинар </br>
+              «СОВРЕМЕННЫЕ ПРОБЛЕМЫ </br>АЭРОГИДРОДИНАМИКИ»
+            </div>
+          </td>
+          <td class="blurb">
+            МГУ имени М.В. Ломоносова, Институт механики МГУ, </br>
+            Научный Совет РАН по механике жидкостей и газов, </br>
+            Российский национальный комитет по теоретической и </br>
+            прикладной механике 
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="location"> 
+      <a href="{{site.baseurl}}">Домой</a> &gt; <a href="{{ page.url }}">{{ page.title }}</a>
+    </div>
+    <div id="container">
+      <div id="sidebar">
+	<ul class="body">
+          <li><a href="/2014/index.html">О конференции</a></li>
+          <li><a href="/2014/org.html">Организаторы</a></li>
+          <li><a href="/2014/place.html">Место проведения</a></li>
+          <li><a href="/2014/abstracts.html">Тезисы докладов</a></li>
+          <li><a href="/index.html">Новости</a></li>
+          <li><a href="/2014/downloads.html">Материалы</a></li>
+          <li><a href="/2014/contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div id="main">
+        <div id="content" class="body">
+          {{ content }}
+          <div style="clear: both;"></div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <p>
+        По вопроса, связанным с сайтов, обращайтесь: 
+        <a id="contact"><script>document.write(f('yand', 'pimanov-vla', 'ex.ru', 'dimir'))</script></a>
+      </p>
+      <p>Дата последнего изменения на сайте {{ site.time | localize: "%d %B %Y" }}</p>
+      {% comment %} <p>Дата последнего изменения на сайте {{ site.time | date_to_string }}</p> {% endcomment %}
+    </div>
+  </body>
+</html>
