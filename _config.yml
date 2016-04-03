@@ -1,6 +1,6 @@
 # _config.yml
 
-exclude: ['README.md','send.sh']
+exclude: ['README.md','send.sh','docs']
 #name: SiteName # наименование блога
 markdown: redcarpet # используемый генератор markdown
 redcarpet: # и его расширения
